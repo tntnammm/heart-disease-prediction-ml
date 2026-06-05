@@ -80,9 +80,44 @@ Evaluation techniques:
 
 ---
 
-## 🏆 Results
+## 📊 Results & Conclusion
 
-Random Forest achieved the best overall performance among the tested models and demonstrated strong classification capability based on ROC-AUC analysis.
+The performance of multiple Machine Learning models was evaluated using Accuracy Score, 5-Fold Cross Validation, and ROC-AUC analysis.
+
+| Model                     | Accuracy |
+| ------------------------- | -------- |
+| Logistic Regression       | 79.51%   |
+| Decision Tree             | 98.54%   |
+| Random Forest             | 98.53%   |
+| K-Nearest Neighbors (KNN) | 73.17%   |
+
+### Key Findings
+
+* Random Forest achieved the highest predictive performance among the evaluated models.
+* Cross-validation results indicated that the selected model generalized well to unseen data.
+* ROC Curve and AUC analysis demonstrated strong classification capability in distinguishing patients with and without heart disease.
+* Exploratory Data Analysis revealed that features such as chest pain type, maximum heart rate, ST depression, and number of major vessels showed strong relationships with heart disease outcomes.
+
+### Conclusion
+
+This project demonstrates a complete Machine Learning workflow for healthcare data analysis, including data preprocessing, exploratory analysis, model development, and performance evaluation.
+
+The results indicate that Machine Learning techniques can effectively support early heart disease risk assessment and provide valuable insights for clinical decision-making. Among the tested models, Random Forest delivered the most reliable and accurate predictions, making it the preferred model for this dataset.
+
+Future work may include hyperparameter optimization, advanced ensemble methods (e.g., XGBoost), model explainability techniques (SHAP), and deployment as a web application using Streamlit.
+
+---
+
+## 📈 Visual Results
+
+### ROC Curve
+![ROC Curve](images/roc_curve.png)
+
+### Model Comparison
+![Model Comparison](images/model_comparison.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 ---
 
